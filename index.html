@@ -27,8 +27,8 @@
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo logo"
-            >WEB<span class="header-logo-studio">STUDIO</span></a
-          >
+            >WEB<span class="header-logo-studio">STUDIO</span>
+          </a>
 
           <ul class="header-list list">
             <li class="header-item item">
@@ -45,23 +45,112 @@
           </ul>
         </nav>
 
+        <button type="button" class="phone-menu-open-button button">
+          <svg class="phone-menu-open-icon" width="32px" height="22px">
+            <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+
         <address class="header-address address">
           <ul class="header-address-list list">
             <li class="header-address-item item">
               <a
                 href="mailto:info@devstudio.com"
-                class="header-address-link mail link"
-                >info@devstudio.com</a
-              >
+                class="header-address-link mail-link link"
+                >info@devstudio.com
+              </a>
             </li>
 
             <li class="header-address-item item">
-              <a href="tel:+110001111111" class="header-address-link tel link"
-                >+11 (000) 111-11-11</a
-              >
+              <a
+                href="tel:+110001111111"
+                class="header-address-link tel-link link"
+                >+11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- phone-menu -->
+      <div class="phone-menu-container container">
+        <button
+          type="button"
+          class="phone-menu-modal-close-button modal-close-button button"
+        >
+          <svg class="close-icon" width="8px" height="8px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="phone-menu-list list">
+          <li class="phone-menu-item item">
+            <a href="./index.html" class="phone-menu-link link current"
+              >Studio
+            </a>
+          </li>
+
+          <li class="phone-menu-item item">
+            <a href="./portfolio.html" class="phone-menu-link link"
+              >Portfolio
+            </a>
+          </li>
+
+          <li class="phone-menu-item item">
+            <a href="#" class="phone-menu-link link">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="phone-menu-address-list list">
+          <li class="phone-menu-address-item item">
+            <a
+              href="tel:+110001111111"
+              class="phone-menu-address-link tel-link link"
+              >+11 (000) 111-11-11
+            </a>
+          </li>
+          <li class="phone-menu-address-item item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="phone-menu-address-link mail-link link"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="phone-menu-social-list social-media-icon-list list">
+          <li class="social-media-icon-item item">
+            <a href="#" class="social-media-icon-link">
+              <svg class="social-media-item-icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media-icon-item">
+            <a href="#" class="social-media-icon-link">
+              <svg class="social-media-item-icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media-icon-item">
+            <a href="#" class="social-media-icon-link">
+              <svg class="social-media-item-icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media-icon-item">
+            <a href="#" class="social-media-icon-link">
+              <svg class="social-media-item-icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -311,11 +400,11 @@
                   Mark Guerrero
                 </h3>
                 <p class="section-team-item-text item-text">Product Designer</p>
-                <ul class="section-team-icon-list list">
-                  <li class="section-team-icon-item item">
-                    <a href="#" class="section-team-icon-link">
+                <ul class="social-media-icon-list list">
+                  <li class="social-media-icon-item item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -326,10 +415,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -338,10 +427,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -352,10 +441,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -376,11 +465,11 @@
                 <p class="section-team-item-text item-text">
                   Frontend Developer
                 </p>
-                <ul class="section-team-icon-list list">
-                  <li class="section-team-icon-item item">
-                    <a href="#" class="section-team-icon-link">
+                <ul class="social-media-icon-list list">
+                  <li class="social-media-icon-item item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -391,10 +480,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -403,10 +492,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -417,10 +506,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -441,11 +530,11 @@
                   Camila Garcia
                 </h3>
                 <p class="section-team-item-text item-text">Marketing</p>
-                <ul class="section-team-icon-list list">
-                  <li class="section-team-icon-item item">
-                    <a href="#" class="section-team-icon-link">
+                <ul class="social-media-icon-list list">
+                  <li class="social-media-icon-item item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -456,10 +545,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -468,10 +557,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -482,10 +571,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -506,11 +595,11 @@
                   Daniel Wilson
                 </h3>
                 <p class="section-team-item-text item-text">UI Designer</p>
-                <ul class="section-team-icon-list list">
-                  <li class="section-team-icon-item item">
-                    <a href="#" class="section-team-icon-link">
+                <ul class="social-media-icon-list list">
+                  <li class="social-media-icon-item item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -521,10 +610,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -533,10 +622,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
@@ -547,10 +636,10 @@
                     </a>
                   </li>
 
-                  <li class="section-team-icon-item">
-                    <a href="#" class="section-team-icon-link">
+                  <li class="social-media-icon-item">
+                    <a href="#" class="social-media-icon-link">
                       <svg
-                        class="section-team-item-icon"
+                        class="social-media-item-icon"
                         width="16px"
                         height="16px"
                       >
