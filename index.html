@@ -45,7 +45,10 @@
           </ul>
         </nav>
 
-        <button type="button" class="phone-menu-open-button button">
+        <button
+          type="button"
+          class="phone-menu-open-button button js-open-menu"
+        >
           <svg class="phone-menu-open-icon" width="32px" height="22px">
             <use href="./images/symbol-defs.svg#icon-hamburger"></use>
           </svg>
@@ -73,10 +76,10 @@
       </div>
 
       <!-- phone-menu -->
-      <div class="phone-menu-container container">
+      <div class="phone-menu-container container js-menu-container">
         <button
           type="button"
-          class="phone-menu-modal-close-button modal-close-button button"
+          class="phone-menu-modal-close-button modal-close-button button js-close-menu"
         >
           <svg class="close-icon" width="8px" height="8px">
             <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -775,6 +778,7 @@
         </form>
       </div>
     </footer> -->
+    <script defer src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
