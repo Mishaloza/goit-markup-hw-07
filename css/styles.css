@@ -194,6 +194,10 @@ body {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -215,6 +219,19 @@ body {
   color: var(--header-logo-studio-color);
 }
 
+/* ------------ HERO ------------ */
+/* .hero {
+  margin: 0 auto;
+  background: var(--hero-bgr-color);
+  max-width: 428px;
+  max-height: 432px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image: var(--hero-lineral-gradient),
+    url(../images/phone-hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* ------------ MEDIA ------------ */
 /* ------------ JUST PHONE ------------ */
 @media screen and (max-width: 767px) {
@@ -224,13 +241,7 @@ body {
   .header-address {
     display: none;
   }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+
   .phone-menu-open-button {
     line-height: 0;
     background-color: transparent;
@@ -254,7 +265,7 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms var(--standart-cubic),
+    transition: opacity 300ms var(--standart-cubic),
       visibility 250ms var(--standart-cubic);
   }
   .phone-menu-container.is-open {
@@ -324,11 +335,8 @@ body {
 }
 
 /* ------------ PHONE ------------ */
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-  }
-}
+/* @media screen and (min-width: 480px) {
+*/
 
 /* ------------ TABLET ------------ */
 @media screen and (min-width: 768px) {
@@ -343,11 +351,19 @@ body {
   }
   .header-container {
     align-items: end;
+    padding: 0 16px;
   }
   .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .header-logo {
+    margin-right: 120px;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
   }
   .header-link {
     position: relative;
@@ -413,8 +429,12 @@ body {
   .header-container {
     align-items: center;
   }
+  .header-logo {
+    margin-right: 76px;
+  }
   .header-address-list {
     flex-direction: row;
+    gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
