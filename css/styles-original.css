@@ -155,6 +155,8 @@ img {
 }
 
 .section-title {
+   margin: 0 auto 72px auto;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -175,11 +177,6 @@ img {
 .item-text {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.section-title {
-  margin: 0 auto 72px auto;
-  text-align: center;
 }
 
 body {
