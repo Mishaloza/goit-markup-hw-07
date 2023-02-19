@@ -220,6 +220,8 @@ body {
 }
 
 .hero {
+  margin-right: auto;
+  margin-left: auto;
   background: var(--hero-bgr-color);
   background-image: var(--hero-lineral-gradient),
     url(../images/phone-hero-image.jpg);
@@ -368,6 +370,14 @@ body {
     background-color: var(--close-btn-bgr-hover-color);
     fill: var(--close-icon-hover-color);
   }
+
+  .header-container {
+    max-width: 100%;
+  }
+
+  .hero {
+    width: 428px;
+  }
 }
 
 /* ------------ PHONE ------------ */
@@ -457,6 +467,7 @@ body {
   }
 
   .hero {
+    max-width: 768px;
     background-image: var(--hero-lineral-gradient),
       url(../images/tablet-hero-image.jpg);
   }
@@ -499,6 +510,7 @@ body {
   }
 
   .hero {
+    max-width: 1440px;
     background-image: var(--hero-lineral-gradient),
       url(../images/decktop-hero-image.jpg);
   }
