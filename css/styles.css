@@ -579,6 +579,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .section-team-item {
+  display: inline-block;
+  width: 264px;
   background-color: var(--team-item-bgr-color);
 }
 
@@ -698,6 +700,12 @@ body {
     max-width: 428px;
   }
 
+  .section-team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .section-team-item {
     margin-bottom: 72px;
   }
@@ -812,11 +820,6 @@ body {
   .section-adventages-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .section-adventages-item-title {
-    text-align: left;
   }
 
   .section-adventages-item {
@@ -824,11 +827,24 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-}
 
-.section-team-list {
-  display: flex;
-  flex-wrap: wrap;
+  .section-adventages-item-title {
+    text-align: left;
+  }
+  .section-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .section-team-item {
+    margin-bottom: 64px;
+  }
+
+  .section-team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 /* ------------ DESCTOP ------------ */
@@ -906,5 +922,20 @@ body {
   .section-projects-list {
     display: flex;
     gap: 24px;
+  }
+
+  .section-team-list {
+  }
+
+  .section-team-item {
+    margin-bottom: 0;
+  }
+
+  .section-team-item:first-child {
+    margin-left: 0;
+  }
+
+  .section-team-item:last-child {
+    margin-right: 0;
   }
 }
