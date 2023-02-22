@@ -1,33 +1,3 @@
-/* --------------- ADVANTAGES --------------- */
-.section-adventages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.section-adventages-item {
-  width: 264px;
-}
-
-.section-adventages-icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  background-color: var(--adventages-icon-bgr-color);
-  border-radius: 4px;
-}
-
-.section-adventages-item-title {
-  margin-top: 8px;
-  color: var(--main-page-section-title-color);
-  margin-bottom: 8px;
-}
-
-/* --------------- PROJECTS --------------- */
-.section-projects {
-  padding-bottom: 120px;
-}
-
 /* --------------- TEAM --------------- */
 .section-team {
   background-color: var(--section-team-bgr-color);

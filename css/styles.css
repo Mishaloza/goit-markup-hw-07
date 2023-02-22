@@ -555,6 +555,61 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* --------------- PROJECTS --------------- */
+
+.section-projects {
+  display: none;
+}
+
+/* --------------- TEAM --------------- */
+.section-team {
+  background-color: var(--section-team-bgr-color);
+  padding-bottom: 128px;
+  padding-top: 96px;
+}
+
+.team-container {
+  text-align: center;
+}
+
+.team-item-content-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  box-shadow: var(--team-item-box-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-team-item {
+  background-color: var(--team-item-bgr-color);
+}
+
+.section-team-item-title {
+  color: var(--item-title-color);
+}
+
+.section-team-icon-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.section-team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--team-icon-bgr-color);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--standart-cubic);
+}
+
+.section-team-icon-link:hover,
+.section-team-icon-link:focus {
+  background-color: var(--team-icon-bgr-hover-color);
+}
+
 /* ------------ MEDIA ------------ */
 /* ------------ JUST PHONE ------------ */
 @media screen and (max-width: 767px) {
@@ -642,11 +697,15 @@ body {
   .hero {
     max-width: 428px;
   }
-}
 
-/* ------------ PHONE ------------ */
-/* @media screen and (min-width: 480px) {
-*/
+  .section-team-item {
+    margin-bottom: 72px;
+  }
+
+  .section-team-item:last-child {
+    margin-bottom: 0;
+  }
+}
 
 /* ------------ TABLET ------------ */
 @media screen and (min-width: 768px) {
@@ -753,6 +812,7 @@ body {
   .section-adventages-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .section-adventages-item-title {
@@ -760,8 +820,15 @@ body {
   }
 
   .section-adventages-item {
-    width: calc(100% - 24px) / 2;
+    width: 356px;
+    margin-left: 0;
+    margin-right: 0;
   }
+}
+
+.section-team-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* ------------ DESCTOP ------------ */
@@ -786,28 +853,27 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-
   .hero {
     max-width: 1440px;
     background-image: var(--hero-lineral-gradient),
       url(../images/decktop-hero-image.jpg);
   }
-
   .hero-container {
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
-
   .hero-title {
     margin-bottom: 48px;
   }
-
   .modal {
     width: 408px;
     height: 584px;
   }
-
+  .section-adventages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .section-adventages-icon-box {
     display: flex;
     justify-content: center;
@@ -815,5 +881,30 @@ body {
     height: 112px;
     background-color: var(--adventages-icon-bgr-color);
     border-radius: 4px;
+  }
+  .section-adventages-list {
+    gap: 24px;
+  }
+  .section-adventages-item {
+    width: 264px;
+  }
+  .section-adventages-item-title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .section-adventages-item-text {
+    font-weight: 400;
+  }
+
+  .section-projects {
+    display: flex;
+    padding-bottom: 120px;
+  }
+
+  .section-projects-list {
+    display: flex;
+    gap: 24px;
   }
 }
