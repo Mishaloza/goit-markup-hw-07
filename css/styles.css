@@ -622,7 +622,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px 24px;
+  gap: 72px 16px;
 }
 
 .section-customers-link {
@@ -652,6 +652,9 @@ body {
 /* ------------ MEDIA ------------ */
 /* ------------ JUST PHONE ------------ */
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+  }
   .header-list {
     display: none;
   }
@@ -866,6 +869,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px 24px;
+  }
+
+  .section-customers-list {
+    gap: 72px 24px;
   }
 
   .section-customers-link {
