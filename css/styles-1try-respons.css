@@ -1,32 +1,3 @@
-.section-customers-list {
-  display: flex;
-  gap: 24px;
-}
-
-.section-customers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 88px;
-  color: var(--customers-item-link-color);
-  border: 1px solid var(--customers-item-link-border-color);
-  border-radius: 4px;
-
-  transition: border 250ms var(--standart-cubic),
-    color 250ms var(--standart-cubic);
-}
-
-.section-customers-link:hover,
-.section-customers-link:focus {
-  color: var(--customers-item-link-hover-color);
-  border: 1px solid var(--customers-item-link-hover-color);
-}
-
-.section-customers-icon {
-  fill: currentColor;
-}
-
 /* --------------- FOOTER --------------- */
 .footer {
   background: var(--footer-bgr-color);
