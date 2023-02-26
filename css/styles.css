@@ -191,7 +191,6 @@ body {
   border-bottom: 1px solid var(--header-border-color);
   box-shadow: var(--header-box-shadow);
 }
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -199,7 +198,6 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -209,12 +207,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-main-color);
 }
-
 .header-logo {
   padding: 24px 0;
   margin: 0;
 }
-
 .header-logo-studio {
   color: var(--header-logo-studio-color);
 }
@@ -230,7 +226,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .hero-container {
   margin: 0 auto;
   max-width: 100%;
@@ -238,7 +233,6 @@ body {
   padding-top: 112px;
   padding-bottom: 112px;
 }
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -253,7 +247,6 @@ body {
   line-height: 1.1;
   color: var(--hero-title-color);
 }
-
 .hero-button {
   display: block;
   margin: 0 auto;
@@ -265,13 +258,11 @@ body {
   box-shadow: var(--hero-btn-box-shadow);
   transition: background-color 250ms var(--standart-cubic);
 }
-
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hero-btn-bgr-color-hover-focus);
   outline: var(--hero-btn-bgr-color-hover-focus);
 }
-
 .backdrop {
   position: fixed;
   width: 100vw;
@@ -279,19 +270,16 @@ body {
   top: 0;
   left: 0;
   background-color: var(--backdrop-bgr-color);
-
   transition: transform 500ms var(--standart-cubic),
     opacity 500ms var(--standart-cubic);
   transform: scaleY(1);
   opacity: 1;
 }
-
 .backdrop.is-hidden {
   transform: scaleY(0);
   pointer-events: none;
   opacity: 0;
 }
-
 .modal {
   position: absolute;
   left: 50%;
@@ -303,7 +291,6 @@ body {
   box-shadow: var(--modal-box-shadow);
   border-radius: 4px;
 }
-
 .modal-close-button {
   position: absolute;
   display: flex;
@@ -325,22 +312,18 @@ body {
   background-color: var(--close-btn-bgr-hover-color);
   fill: var(--close-icon-hover-color);
 }
-
 .modal-form {
   padding: 72px 24px 24px 24px;
 }
-
 .modal-form-box {
   display: flex;
   flex-direction: column;
 }
-
 .modal-form-text {
   text-align: center;
   color: var(--modal-title-color);
   font-weight: 500;
 }
-
 .modal-form-list {
   display: flex;
   flex-direction: column;
@@ -348,7 +331,6 @@ body {
   margin-top: 14px;
   margin-bottom: 16px;
 }
-
 .modal-form-item label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -356,7 +338,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--modal-form-label-color);
 }
-
 .modal-form-input {
   padding-left: 38px;
   height: 40px;
@@ -370,7 +351,6 @@ body {
   outline: none;
   transition: border 250ms var(--standart-cubic);
 }
-
 .modal-form-item textarea {
   height: 120px;
   padding: 8px 16px;
@@ -384,7 +364,6 @@ body {
   outline: none;
   transition: border 250ms var(--standart-cubic);
 }
-
 .modal-form-item textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -392,18 +371,15 @@ body {
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form-input:hover,
 .modal-form-input:focus,
 .textarea:hover,
 .textarea:focus {
   border: var(--modal-form-item-hover-border);
 }
-
 .modal-form-item-input-box {
   position: relative;
 }
-
 .modal-form-item-input-icon {
   position: absolute;
   fill: currentColor;
@@ -411,17 +387,14 @@ body {
   top: 8px;
   transition: fill 250ms var(--standart-cubic);
 }
-
 .modal-form-input:hover + .modal-form-item-input-icon,
 .modal-form-input:focus + .modal-form-item-input-icon {
   fill: var(--modal-form-icon-hover-color);
 }
-
 .modal-form-item-box {
   display: flex;
   flex-direction: column;
 }
-
 .modal-form-policy-box {
   display: flex;
   text-align: center;
@@ -433,14 +406,12 @@ body {
   letter-spacing: 0.04em;
   color: var(--modal-form-privat-policy-checkbox-text-color);
 }
-
 .policy-checkbox {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
-
 .modal-form-checkbox-bgr {
   position: relative;
   display: inline-block;
@@ -453,7 +424,6 @@ body {
     border 250ms var(--standart-cubic);
   cursor: pointer;
 }
-
 .checked-icon {
   position: absolute;
   left: 50%;
@@ -462,33 +432,27 @@ body {
   opacity: 0;
   transition: opacity 250ms var(--standart-cubic);
 }
-
 .policy-checkbox:checked + .modal-form-checkbox-bgr {
   background-color: var(--modal-form-checkbox-border-focus-bgr);
   border: var(--modal-form-checkbox-border-focus);
   background-origin: border-box;
 }
-
 .policy-checkbox:checked + .modal-form-checkbox-bgr .checked-icon {
   opacity: 1;
 }
-
 .policy {
   display: flex;
   align-items: center;
 }
-
 .privacy-policy-link {
   color: var(--privacy-policy-link-color);
   text-decoration: underline;
   transition: color 250ms var(--standart-cubic);
 }
-
 .privacy-policy-link:hover,
 .privacy-policy-link:focus {
   color: var(--hero-btn-bgr-color-hover-focus);
 }
-
 .modal-form-submit-button {
   display: flex;
   align-items: center;
@@ -506,7 +470,6 @@ body {
   color: var(--modal-form-submit-button-text-color);
   transition: background-color 250ms var(--standart-cubic);
 }
-
 .modal-form-submit-button:hover,
 .modal-form-submit-button:focus {
   background-color: var(--hero-btn-bgr-color-hover-focus);
@@ -517,26 +480,21 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
 .section-adventages-list {
   text-align: center;
 }
-
 .section-adventages-item {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
   max-width: 396px;
 }
-
 .section-adventages-item:last-child {
   margin-bottom: 0;
 }
-
 .section-adventages-icon-box {
   display: none;
 }
-
 .section-adventages-item-title {
   margin-bottom: 8px;
   color: var(--main-page-section-title-color);
@@ -546,7 +504,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
-
 .section-adventages-item-text {
   text-align: left;
   font-weight: 500;
@@ -556,7 +513,6 @@ body {
 }
 
 /* --------------- PROJECTS --------------- */
-
 .section-projects {
   display: none;
 }
@@ -567,11 +523,9 @@ body {
   padding-bottom: 128px;
   padding-top: 96px;
 }
-
 .team-container {
   text-align: center;
 }
-
 .team-item-content-container {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -583,18 +537,15 @@ body {
   width: 264px;
   background-color: var(--team-item-bgr-color);
 }
-
 .section-team-item-title {
   color: var(--item-title-color);
 }
-
 .section-team-icon-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-top: 8px;
 }
-
 .section-team-icon-link {
   display: flex;
   justify-content: center;
@@ -603,10 +554,8 @@ body {
   height: 40px;
   background-color: var(--team-icon-bgr-color);
   border-radius: 50%;
-
   transition: background-color 250ms var(--standart-cubic);
 }
-
 .section-team-icon-link:hover,
 .section-team-icon-link:focus {
   background-color: var(--team-icon-bgr-hover-color);
@@ -617,14 +566,12 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
 .section-customers-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px 16px;
 }
-
 .section-customers-link {
   display: flex;
   justify-content: center;
@@ -638,13 +585,11 @@ body {
   transition: border 250ms var(--standart-cubic),
     color 250ms var(--standart-cubic);
 }
-
 .section-customers-link:hover,
 .section-customers-link:focus {
   color: var(--customers-item-link-hover-color);
   border: 1px solid var(--customers-item-link-hover-color);
 }
-
 .section-customers-icon {
   fill: currentColor;
 }
@@ -710,8 +655,14 @@ body {
   background-color: var(--footer-icon-bgr-hover-focus);
 }
 
+.footer-subscribe-form {
+  width: 100%;
+}
+
 .footer-subscribe-text {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
   color: var(--footer-subtitle-social-media-text-color);
   font-weight: 500;
@@ -725,7 +676,7 @@ body {
 }
 
 .footer-subscribe-form input {
-  max-width: 398px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   color: var(--footer-subtitle-subscribe-form-text-color);
@@ -777,7 +728,6 @@ body {
   .header-address {
     display: none;
   }
-
   .phone-menu-open-button {
     line-height: 0;
     background-color: transparent;
@@ -809,7 +759,6 @@ body {
     visibility: visible;
     pointer-events: auto;
   }
-
   .phone-menu-item {
     display: block;
     margin-bottom: 40px;
@@ -847,15 +796,12 @@ body {
     justify-content: space-between;
     padding-right: 44px;
   }
-
   .header-container {
     max-width: 100%;
   }
-
   .hero {
     max-width: 428px;
   }
-
   .section-team-list {
     display: flex;
     flex-direction: column;
@@ -965,18 +911,15 @@ body {
     width: 408px;
     height: 586px;
   }
-
   .section-adventages-list {
     display: flex;
     flex-wrap: wrap;
   }
-
   .section-adventages-item {
     width: 356px;
     margin-left: 0;
     margin-right: 0;
   }
-
   .section-adventages-item-title {
     text-align: left;
   }
@@ -986,16 +929,36 @@ body {
     justify-content: center;
     gap: 64px 24px;
   }
-
   .section-customers-list {
     gap: 72px 24px;
   }
-
   .section-customers-link {
     width: 168px;
     height: 88px;
   }
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: baseline;
+    text-align: left;
+    gap: 72px 24px;
+    padding-left: 108px;
+  }
+  .footer-text {
+    text-align: left;
+  }
+  .footer-subscribe-text {
+    margin-left: 0;
+  }
+  .footer-subscribe-box {
+    flex-direction: unset;
+    gap: 24px;
+  }
+  .footer-subscribe-form input {
+    width: 264px;
+  }
 }
+
 /* ------------ DESCTOP ------------ */
 @media screen and (min-width: 1200px) {
   .container {
@@ -1062,31 +1025,39 @@ body {
   .section-adventages-item-text {
     font-weight: 400;
   }
-
   .section-projects {
     display: flex;
     padding-bottom: 120px;
   }
-
   .section-projects-list {
     display: flex;
     gap: 24px;
   }
-
   .section-team-item {
     margin-bottom: 0;
   }
-
   .section-team-item:first-child {
     margin-left: 0;
   }
-
   .section-team-item:last-child {
     margin-right: 0;
   }
-
   .section-customers {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    padding-left: 16px;
+    gap: 0;
+  }
+  .footer-logo-text-box {
+    margin-right: 120px;
+  }
+  .footer-logo-text {
+    width: 264px;
+  }
+  .footer-social-media-box {
+    margin-right: 80px;
   }
 }
