@@ -797,6 +797,7 @@ body {
     font-size: 20px;
   }
   .phone-menu-social-list {
+    max-width: 428px;
     margin-top: 48px;
     justify-content: space-between;
     padding-right: 44px;
