@@ -220,9 +220,6 @@ body {
 .hero {
   margin-right: auto;
   margin-left: auto;
-  background: var(--hero-bgr-color);
-  background-image: var(--hero-lineral-gradient),
-    url(../images/phone-hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -717,10 +714,15 @@ body {
   background-color: #404bbf;
 }
 /* ------------ MEDIA ------------ */
+@media screen and (max-width: 400px) {
+  .phone-menu-address-link.tel-link {
+    font-size: 27px;
+  }
+}
 /* ------------ JUST PHONE ------------ */
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 428px;
+    max-width: 767px;
   }
   .header-list {
     display: none;
@@ -735,6 +737,7 @@ body {
   .phone-menu-open-icon {
     stroke: currentColor;
   }
+
   .phone-menu-container {
     position: fixed;
     display: flex;
@@ -801,6 +804,18 @@ body {
   }
   .hero {
     max-width: 428px;
+    background: var(--hero-bgr-color);
+    background-image: var(--hero-lineral-gradient),
+      url(../images/1phone-hero-image-min.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-lineral-gradient),
+        url(../images/1phone-hero-image@2x-min.jpg);
+    }
   }
   .section-team-list {
     display: flex;
