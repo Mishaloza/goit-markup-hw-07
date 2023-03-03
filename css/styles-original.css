@@ -155,7 +155,7 @@ img {
 }
 
 .section-title {
-   margin: 0 auto 72px auto;
+  margin: 0 auto 72px auto;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -241,7 +241,8 @@ body {
 }
 
 .header-link:hover,
-.header:link:focus {
+.header:link:focus,
+.current {
   color: var(--header-link-hover-focus-color);
 }
 
