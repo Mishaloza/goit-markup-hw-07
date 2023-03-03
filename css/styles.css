@@ -285,8 +285,8 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 392px;
-  height: 586px;
-  background: var(--modal-bgr-color);
+  min-height: 586px;
+  background-color: var(--modal-bgr-color);
   box-shadow: var(--modal-box-shadow);
   border-radius: 4px;
 }
@@ -715,7 +715,13 @@ body {
 .footer-subscribe-button:focus {
   background-color: #404bbf;
 }
+
 /* ------------ MEDIA ------------ */
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 400px) {
   .phone-menu-address-link.tel-link {
     font-size: 27px;
