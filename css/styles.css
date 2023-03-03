@@ -423,6 +423,7 @@ body {
     border 250ms var(--standart-cubic);
   cursor: pointer;
 }
+
 .checked-icon {
   position: absolute;
   left: 50%;
