@@ -218,6 +218,7 @@ body {
 /* ------------ HERO ------------ */
 
 .hero {
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
@@ -412,6 +413,7 @@ body {
   position: absolute;
 }
 .modal-form-checkbox-bgr {
+  flex-shrink: 0;
   position: relative;
   display: inline-block;
   height: 16px;
@@ -833,7 +835,22 @@ body {
     gap: 72px;
   }
 }
-
+/* ------------ PHONE ------------ */
+@media screen and (min-width: 428px) {
+  .hero {
+    max-width: 768px;
+    background-image: var(--hero-lineral-gradient),
+      url(../images/1tablet-hero-image-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-lineral-gradient),
+        url(../images/1tablet-hero-image@2x-min.jpg);
+    }
+  }
+}
 /* ------------ TABLET ------------ */
 @media screen and (min-width: 768px) {
   .container {
@@ -916,16 +933,16 @@ body {
     display: none;
   }
   .hero {
-    max-width: 768px;
+    max-width: 1440px;
     background-image: var(--hero-lineral-gradient),
-      url(../images/1tablet-hero-image-min.jpg);
+      url(../images/1decktop-hero-image-min.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
       background-image: var(--hero-lineral-gradient),
-        url(../images/1tablet-hero-image@2x-min.jpg);
+        url(../images/1decktop-hero-image@2x-min.jpg);
     }
   }
   .hero-container {
@@ -946,11 +963,11 @@ body {
   .section-adventages-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .section-adventages-item {
     width: 356px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
   .section-adventages-item-title {
     text-align: left;
@@ -1012,19 +1029,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-  .hero {
-    max-width: 1440px;
-    background-image: var(--hero-lineral-gradient),
-      url(../images/1decktop-hero-image-min.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: var(--hero-lineral-gradient),
-        url(../images/1decktop-hero-image@2x-min.jpg);
-    }
   }
   .hero-container {
     height: 600px;
